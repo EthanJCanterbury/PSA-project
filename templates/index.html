@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protect Your Digital Footprint & Identity</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-shield-alt"></i> Protect Your Digital Identity</h1>
+            <p style="font-size: 1.3em; margin-top: 20px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Master the art of digital privacy and security in our interconnected world</p>
+            <div style="margin-top: 30px;">
+                <button onclick="smoothScroll('intro')" style="margin: 0 10px;"><i class="fas fa-rocket"></i> Get Started</button>
+                <button onclick="smoothScroll('quiz')" style="margin: 0 10px;"><i class="fas fa-brain"></i> Take Quiz</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="intro">
+            <h2><i class="fas fa-search"></i> What is your Digital Footprint?</h2>
+            <p style="font-size: 1.2em; text-align: center; margin-bottom: 30px;">Your digital footprint is like invisible ink - everything you do online leaves a trace that can be tracked, analyzed, and potentially exploited.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
+                <div style="background: linear-gradient(135deg, #4299e1, #63b3ed); color: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 8px 25px rgba(66, 153, 225, 0.3);">
+                    <div style="font-size: 3em; margin-bottom: 15px;"><i class="fas fa-users"></i></div>
+                    <h3>Social Media Posts</h3>
+                    <p>Every photo, comment, and like creates a  digital record for you and people can store this as your personal data.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #38a169, #68d391); color: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 8px 25px rgba(56, 161, 105, 0.3);">
+                    <div style="font-size: 3em; margin-bottom: 15px;"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>Online Purchases</h3>
+                    <p>Shopping reveals personal preferences and financial information</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #3182ce, #63b3ed); color: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);">
+                    <div style="font-size: 3em; margin-bottom: 15px;"><i class="fas fa-search"></i></div>
+                    <h3>Search History</h3>
+                    <p>Search queries expose your interests, concerns, and personal details. Companies like Google use this to target ads and influence your online experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <h2><i class="fas fa-exclamation-triangle"></i> Digital Footprint Dangers</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                <div class="tooltip" data-tooltip="Criminals use your data to impersonate you" style="background: #fff5f5; padding: 25px; border-radius: 15px; border-left: 5px solid #e53e3e; transition: all 0.3s ease;">
+                    <div style="font-size: 2.5em; margin-bottom: 15px; color: #e53e3e;"><i class="fas fa-user-secret"></i></div>
+                    <h3 style="color: #e53e3e; margin-bottom: 10px;">Identity Theft</h3>
+                    <p>Hackers piece together your personal information from various sources to steal your identity and commit fraud.</p>
+                </div>
+                <div class="tooltip" data-tooltip="Companies build detailed profiles about you" style="background: #fffaf0; padding: 25px; border-radius: 15px; border-left: 5px solid #dd6b20; transition: all 0.3s ease;">
+                    <div style="font-size: 2.5em; margin-bottom: 15px; color: #dd6b20;"><i class="fas fa-eye"></i></div>
+                    <h3 style="color: #dd6b20; margin-bottom: 10px;">Privacy Invasion</h3>
+                    <p>Data brokers collect and sell your information, building an extensive profile for you and can use this data to blackmail you, extort you or try and scam you.</p>
+                </div>
+                <div class="tooltip" data-tooltip="Old posts can resurface and damage reputation" style="background: #f0fff4; padding: 25px; border-radius: 15px; border-left: 5px solid #38a169; transition: all 0.3s ease;">
+                    <div style="font-size: 2.5em; margin-bottom: 15px; color: #38a169;"><i class="fas fa-briefcase"></i></div>
+                    <h3 style="color: #38a169; margin-bottom: 10px;">Career Impact</h3>
+                    <p>Employers and colleagues can find old posts or photos that may harm your professional reputation.</p>
+                </div>
+                <div class="tooltip" data-tooltip="Massive data breaches expose personal information" style="background: #f7fafc; padding: 25px; border-radius: 15px; border-left: 5px solid #4299e1; transition: all 0.3s ease;">
+                    <div style="font-size: 2.5em; margin-bottom: 15px; color: #4299e1;"><i class="fas fa-unlock-alt"></i></div>
+                    <h3 style="color: #4299e1; margin-bottom: 10px;">Data Breaches</h3>
+                    <p>When companies you trust get hacked, your personal information becomes available to cybercriminals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips">
+            <h2><i class="fas fa-shield-alt"></i> Advanced Protection Strategies</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header"><i class="fas fa-lock"></i>Password Security</div>
+                    <div class="accordion-content">
+                        <h4><i class="fas fa-bullseye"></i> Best Practices:</h4>
+                        <ul style="margin: 15px 0; line-height: 2;">
+                            <li>Use 12+ characters with mixed case, numbers, and symbols</li>
+                            <li>Never reuse passwords across different sites</li>
+                            <li>Use a reputable password manager like Bitwarden or 1Password</li>
+                            <li>Enable breach monitoring to alert you of compromised passwords</li>
+                        </ul>
+                        <p><strong><i class="fas fa-lightbulb"></i> Pro Tip:</strong> Create memorable passphrases like "Pizza!Ethan$IScOoL$" instead of random characters.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header"><i class="fas fa-key"></i> Two-Factor Authentication (2FA)</div>
+                    <div class="accordion-content">
+                        <h4><i class="fas fa-rocket"></i> Setup Guide:</h4>
+                        <ol style="margin: 15px 0; line-height: 2;">
+                            <li>Download an authenticator app (Google Authenticator, Authy, or Microsoft Authenticator)</li>
+                            <li>Enable 2FA on all critical accounts (email, banking, social media)</li>
+                            <li>Save backup codes in a secure location</li>
+                            <li>Consider hardware keys (YubiKey - i have a few in the closet) for maximum security</li>
+                        </ol>
+                        <p><strong><i class="fas fa-bolt"></i> Fun Fact:</strong> 2FA blocks 99.9% of automated attacks!</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header"><i class="fas fa-mobile-alt"></i> Social Media Privacy Mastery</div>
+                    <div class="accordion-content">
+                        <h4><i class="fas fa-sliders-h"></i> Privacy Settings Checklist:</h4>
+                        <ul style="margin: 15px 0; line-height: 2;">
+                            <li>Set profiles to private and review friend/follower lists</li>
+                            <li>Disable location tracking and geotagging</li>
+                            <li>Turn off facial recognition and auto-tagging</li>
+                            <li>Regularly audit app permissions and connected services</li>
+                            <li>Use the "View As" feature to see what others can see</li>
+                        </ul>
+                        <p><strong><i class="fas fa-broom"></i> Spring Cleaning:</strong> Delete old posts, untag yourself from unwanted photos, and remove inactive accounts.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header"><i class="fas fa-globe"></i> VPN & Network Security</div>
+                    <div class="accordion-content">
+                        <h4><i class="fas fa-shield-alt"></i> Protection Strategy:</h4>
+                        <ul style="margin: 15px 0; line-height: 2;">
+                            <li>Always use a VPN on public Wi-Fi networks</li>
+                            <li>Choose reputable VPN providers (NordVPN, ExpressVPN, Surfshark)</li>
+                            <li>Enable automatic VPN connection on untrusted networks</li>
+                            <li>Use HTTPS websites whenever possible</li>
+                        </ul>
+                        <p><strong><i class="fas fa-exclamation-triangle"></i> Warning:</strong> Free VPNs often sell your data - invest in a paid service for real protection.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header"><i class="fas fa-sync-alt"></i> Regular Security Maintenance</div>
+                    <div class="accordion-content">
+                        <h4><i class="fas fa-calendar-alt"></i> Monthly Security Routine:</h4>
+                        <ul style="margin: 15px 0; line-height: 2;">
+                            <li>Update all software and operating systems</li>
+                            <li>Review and revoke unnecessary app permissions</li>
+                            <li>Check credit reports and account statements</li>
+                            <li>Backup important data to secure cloud storage</li>
+                            <li>Review privacy settings on all accounts</li>
+                        </ul>
+                        <p><strong><i class="fas fa-chart-line"></i> Track Progress:</strong> Set calendar reminders for your security maintenance routine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2><i class="fas fa-brain"></i> Digital Security Challenge</h2>
+            <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">Test your cybersecurity knowledge and discover your digital protection level!</p>
+            
+            <div class="quiz">
+                <div class="question">
+                    <p>1. <i class="fas fa-lock"></i> What makes a password truly secure?</p>
+                    <label><input type="radio" name="q1" value="a"> At least 12 characters with mixed case, numbers, and symbols</label>
+                    <label><input type="radio" name="q1" value="b"> Your pet's name with your birth year</label>
+                    <label><input type="radio" name="q1" value="c"> The word "password" with some numbers</label>
+                </div>
+                
+                <div class="question">
+                    <p>2. <i class="fas fa-shield-alt"></i> Which provides the strongest account protection?</p>
+                    <label><input type="radio" name="q2" value="a"> A very long password</label>
+                    <label><input type="radio" name="q2" value="b"> Two-factor authentication (2FA)</label>
+                    <label><input type="radio" name="q2" value="c"> Changing passwords monthly</label>
+                </div>
+                
+                <div class="question">
+                    <p>3. <i class="fas fa-mobile-alt"></i> On public Wi-Fi, what should you NEVER do?</p>
+                    <label><input type="radio" name="q3" value="a"> Check social media</label>
+                    <label><input type="radio" name="q3" value="b"> Online banking without VPN</label>
+                    <label><input type="radio" name="q3" value="c"> Browse news websites</label>
+                </div>
+                
+                <div class="question">
+                    <p>4. <i class="fas fa-globe"></i> What's the best tool for protecting your online privacy?</p>
+                    <label><input type="radio" name="q4" value="a"> Antivirus software</label>
+                    <label><input type="radio" name="q4" value="b"> VPN (Virtual Private Network)</label>
+                    <label><input type="radio" name="q4" value="c"> Ad blocker</label>
+                </div>
+                
+                <div class="question">
+                    <p>5. <i class="fas fa-sync-alt"></i> How often should you update your software?</p>
+                    <label><input type="radio" name="q5" value="a"> As soon as updates are available</label>
+                    <label><input type="radio" name="q5" value="b"> Once a year</label>
+                    <label><input type="radio" name="q5" value="c"> Only when something breaks</label>
+                </div>
+                
+                <div style="text-align: center; margin: 40px 0;">
+                    <button onclick="checkQuiz()" style="font-size: 1.2em; padding: 20px 40px;"><i class="fas fa-calculator"></i> Calculate My Security Score</button>
+                </div>
+                
+                <div id="result"></div>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2><i class="fas fa-link"></i> Expert Resources & Tools</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                <div style="background: linear-gradient(135deg, #4299e1, #63b3ed); color: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(66, 153, 225, 0.3);">
+                    <h3><i class="fas fa-university"></i> Privacy Organizations</h3>
+                    <ul style="line-height: 2;">
+                        <li><a href="https://www.privacyrights.org/" target="_blank" style="color: white;">Privacy Rights Clearinghouse</a></li>
+                        <li><a href="https://www.eff.org/" target="_blank" style="color: white;">Electronic Frontier Foundation</a></li>
+                        <li><a href="https://www.consumer.ftc.gov/" target="_blank" style="color: white;">FTC Consumer Protection</a></li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #38a169, #68d391); color: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(56, 161, 105, 0.3);">
+                    <h3><i class="fas fa-tools"></i> Security Tools</h3>
+                    <ul style="line-height: 2;">
+                        <li><a href="https://bitwarden.com/" target="_blank" style="color: white;">Bitwarden Password Manager</a></li>
+                        <li><a href="https://www.yubico.com/" target="_blank" style="color: white;">YubiKey Hardware Security</a></li>
+                        <li><a href="https://duckduckgo.com/" target="_blank" style="color: white;">DuckDuckGo Private Search</a></li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #3182ce, #63b3ed); color: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);">
+                    <h3><i class="fas fa-book"></i>Resources</h3>
+                    <ul style="line-height: 2;">
+                        <li><a href="https://www.cybrary.it/" target="_blank" style="color: white;">Cybrary Free Courses</a></li>
+                        <li><a href="https://krebsonsecurity.com/" target="_blank" style="color: white;">Krebs on Security Blog</a></li>
+                        <li><a href="https://haveibeenpwned.com/" target="_blank" style="color: white;">Have I Been Pwned?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p style="font-size: 1.2em; margin-bottom: 15px;"><i class="fas fa-shield-alt"></i> Stay Vigilant, Stay Protected</p>
+            <p>Your privacy is your power - protect it!</p>
+            <div style="margin-top: 20px; font-size: 2em;">
+                <i class="fas fa-lock"></i> <i class="fas fa-globe"></i> <i class="fas fa-shield-alt"></i> <i class="fas fa-key"></i> <i class="fas fa-laptop"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
